@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>EXERCISE-2</title>
+    </head>
+    <body>
+        <script>
+            const meta = {
+                title: 'Destructuring Assignment',
+                authors: [ { firstname: 'Craig', lastname: 'Buckler' } ],
+                publisher: {
+                name: 'SitePoint',
+                url: 'http://www.sitepoint.com/'
+                }
+            };
+            const [{firstname : name}] = meta.authors;
+            const {title : doc} = meta;
+            const {url : web} = meta.publisher;
+            console.log(name, doc, web);
+        </script>
+    </body>
+</html>
