@@ -12,10 +12,8 @@
                 url: 'http://www.sitepoint.com/'
                 }
             };
-            const [{firstname : name}] = meta.authors;
-            const {title : doc} = meta;
-            const {url : web} = meta.publisher;
-            console.log(name, doc, web);
+            const [[{firstname : name}], {title : doc}, {url : web}]  = [meta.authors, meta, meta.publisher];
+            console.log(`You can find ${name}'s ${doc} at ${web}`);
         </script>
     </body>
 </html>

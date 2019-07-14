@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>EXERCISE-8</title>
+    </head>
+    <body>
+        <script>
+            const personDetails = {
+                first: 'Mohan',
+                last: 'Singh',
+                address: {
+                    lines: ['Sector 47', 'Chestor Lane', 'Apt 23'],
+                    city: 'Gurgaon',
+                    state: 'Haryana'
+                }
+            }
+            function findLane(personDetails) {
+                const {lines: street} = personDetails.address;
+                console.log(street[1]);
+            }
+            findLane(personDetails);
+        </script>
+    </body>
+</html>

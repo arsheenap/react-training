@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>EXERCISE-9</title>
+    </head>
+    <body>
+        <script>
+            let nodes = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+            let str = '';
+            function firstCharacters() {
+                for(node of nodes) {
+                    str.concat(node.textContent.charAt());
+                }
+                console.log(str);
+            }
+            firstCharacters();
+        </script>
+    </body>
+</html>

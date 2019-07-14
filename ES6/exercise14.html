@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>EXERCISE-14</title>
+    </head>
+    <body>
+        <script>
+            let config = {
+                chartType: 0,
+                bullColor: "green",
+                bearColor: "red",
+                day: 30
+            };
+            function drawChart({chartType= 0, bullColor= 'green', bearColor= 'red', day= 30}) {
+                console.log(bullColor, chartType);
+            }
+            drawChart({bullColor: 'black'});
+        </script>
+    </body>
+</html>
